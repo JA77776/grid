@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    background-image: linear-gradient(tp right,green,yellow);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    background-color: brown;
+}
+.container >* {
+    width: 80px;
+    aspect-ratio: 1/1;
+    background-color: blueviolet;
+}
+.item:nth-child(1){
+    background-color: aqua;
+    
+}
